@@ -24,7 +24,7 @@ print('23.轉換ASCII')
 print('24.轉換Unicode')
 
 
-choose = input('請輸入選項:')
+choose = int(input('請輸入選項:'))
 if choose == 1:
     sentence = input('請輸入句子:')
     print(sentence.capitalize())
@@ -43,8 +43,8 @@ elif choose == 5:
 elif choose == 6:
     sentence = input('請輸入句子:')
     subSec = input('請輸入字串:')
-    a = input('請輸入開始位置')
-    b = input('請輸入結束位置')
+    a = int(input('請輸入開始位置'))
+    b = int(input('請輸入結束位置'))
     print(sentence.replace(subSec , a ,b))
 elif choose == 7:
     sentence = input('請輸入句子:')
@@ -57,19 +57,19 @@ elif choose == 8:
 elif choose == 9:
     sentence = input('請輸入句子:')
     subSec = input('請輸入字串:')
-    a = input('請輸入開始位置')
-    b = input('請輸入結束位置')
+    a = int(input('請輸入開始位置'))
+    b = int(input('請輸入結束位置'))
     print(sentence.startwith(subSec,a ,b))
 elif choose == 10:
     sentence = input('請輸入句子:')
     subSec = input('請輸入字串:')
-    a = input('請輸入開始位置')
-    b = input('請輸入結束位置')
+    a = int(input('請輸入開始位置'))
+    b = int(input('請輸入結束位置'))
     print(sentence.endwith(subSec,a ,b))
 elif choose == 11:
     sentence = input('請輸入句子:')
     sep = input('分隔符號:')
-    strnum = input('分割次數:')
+    strnum = int(input('分割次數:'))
     print(sentence.split(sep , strnum))
 elif choose == 12:
     sentence1 = input('請輸入句子1:')
@@ -97,17 +97,17 @@ elif choose == 19:
     sentence = input('請輸入句子:')
     print(sentence.isspace())
 elif choose == 20:
-    sentence = input('請輸入句子:')
-    print(sentence.bin())
+    sentence = int(input('請輸入句子:'))
+    print(bin(sentence))
 elif choose == 21:
     sentence = input('請輸入句子:')
-    print(sentence.oct())
+    print(oct(sentence))
 elif choose == 22:
     sentence = input('請輸入句子:')
-    print(sentence.hex())
+    print(hex(sentence))
 elif choose == 23:
     sentence = input('請輸入句子:')
-    print(sentence.chr())
+    print(chr(sentence))
 elif choose == 24:
     sentence = input('請輸入句子:')
-    print(sentence.ord())
+    print(ord(sentence))
